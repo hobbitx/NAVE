@@ -1,9 +1,10 @@
 CC=gcc
-OPCOES_COMPILADOR=-I. -lglut -lGLU -lGLEW -lGL
-TODOS_ARQUIVOS_PONTOH =
-TODOS_ARQUIVOS_OBJ = main.o texto.o terreno.o estrelas.o
+OPCOES_COMPILADOR=-I. -I/usr/include/SOIL -lglut -lGLU -lSOIL -lGLEW -lGL -lm
+TODOS_ARQUIVOS_PONTOH = 
+TODOS_ARQUIVOS_OBJ = main.o score.o texto.o terreno.o variaveis.o desenha.o estrelas.o texturas.o loja.o
 
-%.o: ../%.c $(TODOS_ARQUIVOS_PONTOH)
+
+%.o: ../files/arquivos/%.c $(TODOS_ARQUIVOS_PONTOH)
 	$(CC) -o $@ -c $< $(OPCOES_COMPILADOR)
 
 all: $(TODOS_ARQUIVOS_OBJ)
