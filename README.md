@@ -51,10 +51,15 @@ Nesta seção será apresentado todo o funcionamento após a compilação.
 ### Comandos
 
 Seta pra cima - Liga os motores
+
 Seta para a esquerda - Inclina para a esquerda
+
 Seta para a Direita - Inclina para a Direita
+
 Esc- Volta ao menu principal
+
 P-Pausa o jogo
+
 R-Reinicia o jogo
 
 
